@@ -1,0 +1,28 @@
+
+Deep Learning Book Notes
+Chapter 1. Introduction
+
+
+Challenge of AI/main thesis of this book: How to teach machines to learn and understand the world in abstractions?
+
+KPs:
++ p2: "Ironically, abstract and formal tasks that are among the most difficult mental undertakings for a human being are among the easist for a computer."
+    + [ProjectIdea]: create digest based on interests/upvoet for previous content -> rank new content based on previous content selection/consumption
++ p2: "A person's everyday life requires an immense amount of knowledge about the world. Much of this knowledge is subjective and intuitive, and therefore difficult to articulate in a formal way. Computers need to capture this same knowledge in order to behave in an intelligent way. Computers need to capture this same knowledge in order to behave in an intelligent way. One of the key challenges in artificial intelligence is how to get this informal knowledge into a computer" #AIGoals
++ Problem: hard-coding knowledge leads to incorrect predictions of future events
+    + Solution: teach AI to acquire their own knowledge by extracting patterns from raw data (this is the definition of machine learning)
+    + inputs -> <ML Algorithms> -> output/decision
++ Importance of representation/features -> solution:
+    + p3: "In computer science, operations such as searching a collection of data can proceed exponentially faster if the collection is structured and indexed intelligently...the choice of **representation** has an enormous effect on the performance of machine learning algorithms."
+    + p3: "Many artificial intelligence tasks can be solved by designing the right set of features to extract for that task, then providing these features to a simple machine learning algorithm...However, for many tasks it is difficult to know what features shoule be extracted."
+    + p4: "One solution to this problem is to use machine learning to discover not only the mapping from representation to output by also the representation itself. This approach is known as **representation learning**."
+        + Learned representations > Hand-designed representations (often)
+        + Allows AI systems to adapt to new tasks with minimal human intervention
+        + Can discover good set of features for simple task in minutes/complex task in hours->months, compared to much longer via manually designing features for a complex task. 
+
++ Purpose of Deep Learning:
+    + p5: "**Deep Learning** solved the central problem in representation learning (problem: difficult to extract high-level abstract features from raw data) by introducing representations that are expressed in terms of other, simpler representations."
+        + Example of DL model: MLP (multilayer perceptron, or feedforward deep network), which is just a mathematical function that maps some set of input values to output values. 
+            + This function is formed by composing many simpler functions.
+            + Each application of a different math function is a new representation of the input.
+    + p8: "Deep Learning is a particular kind of machine learning that achieves great power and flexibility by learning to represent the world as a nested hierarchy of concepts, with each concept defined in relation to simpler concepts, and more abstract representations computed in terms of less abstract ones."
